@@ -1,5 +1,5 @@
+const choices = ["rock" , "paper", "scissors"]
 function getComputerChoice(){
-    const choices = ["rock" , "paper", "scissors"]
 
     index = Math.floor(Math.random() * 3)   
     let computerChoice = choices[index]
@@ -7,3 +7,10 @@ function getComputerChoice(){
 }
 
 console.log(getComputerChoice());
+
+
+function getHumanChoice(){
+    let humanChoice = prompt("Rock , Paper or Scissors?")
+    return humanChoice
+}
+console.log(getHumanChoice())
